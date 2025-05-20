@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>註冊成功</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    
+    .success-card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+      animation: fadeIn 0.8s ease-out;
+    }
+    
+    .header {
+      background-color: #4CAF50;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+    
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .success-icon svg {
+      width: 40px;
+      height: 40px;
+      fill: #4CAF50;
+    }
+    
+    .content {
+      padding: 2rem 1.5rem;
+    }
+    
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #222;
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: 600;
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: #3d8b40;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+    }
+    
+    .btn-outline {
+      background-color: transparent;
+      color: #4CAF50;
+      border: 2px solid #4CAF50;
+      margin-left: 1rem;
+    }
+    
+    .btn-outline:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    .divider {
+      margin: 2rem 0;
+      height: 1px;
+      background-color: #eee;
+    }
+    
+    .footer {
+      padding-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+      background-color: #e0e0e0;
+      transform: translateY(-2px);
+    }
+    
+    .social-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #666;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .success-card {
+        max-width: 100%;
+      }
+      
+      h1 {
+        font-size: 1.5rem;
+      }
+      
+      .success-icon {
+        width: 70px;
+        height: 70px;
+      }
+      
+      .action-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .btn {
+        display: block;
+        width: 100%;
+      }
+      
+      .btn-outline {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="success-card">
+    <div class="header">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+        </svg>
+      </div>
+    </div>
+    
+    <div class="content">
+      <h1>註冊成功！</h1>
+      <p>感謝您註冊這個無趣的小網站。祝您有美好的一天!</p>
+      
+      <div class="action-buttons">
+        <a href="https://chuchotenotes.vercel.app/" class="btn">開始探索</a>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <p>與我們保持聯繫</p>
+      <div class="footer">
+        有任何問題嗎？請<a href="#" style="color: #4CAF50; text-decoration: none;">聯繫我們</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
