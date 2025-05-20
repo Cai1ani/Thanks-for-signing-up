@@ -1,1 +1,1 @@
-# sign-up-success
+# Thanks-for-signing-up
