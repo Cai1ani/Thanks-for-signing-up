@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>註冊成功</title>
+  <title>Let's Chuchoté!</title>
   <style>
     * {
       margin: 0;
@@ -13,7 +13,7 @@
     }
     
     body {
-      background-color: #f8f9fa;
+      background-color: #e5dcb19c;
       color: #333;
       display: flex;
       justify-content: center;
@@ -23,7 +23,7 @@
     }
     
     .success-card {
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.2);
       border-radius: 16px;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
       overflow: hidden;
@@ -31,10 +31,15 @@
       max-width: 480px;
       text-align: center;
       animation: fadeIn 0.8s ease-out;
+
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
     }
+
     
     .header {
-      background-color: #4CAF50;
+      background-color: #8d926fb4;
       padding: 2rem 1rem;
       position: relative;
     }
@@ -75,7 +80,7 @@
     
     .btn {
       display: inline-block;
-      background-color: #4CAF50;
+      background-color: #d4d383;
       color: white;
       font-weight: 600;
       padding: 0.75rem 2rem;
@@ -87,7 +92,7 @@
     }
     
     .btn:hover {
-      background-color: #3d8b40;
+      background-color: #dfdac2;
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
     }
@@ -115,35 +120,7 @@
       font-size: 0.9rem;
       color: #999;
     }
-    
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .social-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #f1f1f1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.3s ease;
-    }
-    
-    .social-icon:hover {
-      background-color: #e0e0e0;
-      transform: translateY(-2px);
-    }
-    
-    .social-icon svg {
-      width: 20px;
-      height: 20px;
-      fill: #666;
-    }
+  
     
     @keyframes fadeIn {
       from {
@@ -207,11 +184,7 @@
       
       <div class="divider"></div>
       
-      <p>與我們保持聯繫</p>
-      <div class="footer">
-        有任何問題嗎？請<a href="#" style="color: #4CAF50; text-decoration: none;">聯繫我們</a>
-      </div>
-    </div>
+      <p>Chuchoté Notes</p>
   </div>
 </body>
 </html>
